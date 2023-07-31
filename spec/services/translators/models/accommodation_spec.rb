@@ -47,7 +47,7 @@ RSpec.describe Translators::Models::Accommodation do
       end
     end
 
-    context "a context" do
+    context "nil values" do
       %w{id name address suburb country postcode info}.each do |attribute|
         let(:example) { nil }
         let(attribute.to_sym) { example }
