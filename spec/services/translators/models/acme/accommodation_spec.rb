@@ -39,16 +39,17 @@ RSpec.describe Translators::Models::Acme::Accommodation do
     it "should map the attributes to our naming conventions" do
       expect(subject.attributes).to eq( 
         {
-          id: id,
-          destination_id: destination_id,
-          name: name,
-          latitude: latitude.to_s,
-          longitude: longitude.to_s,
-          address: address,
-          suburb: suburb,
-          country: country, 
-          postcode: postcode, 
-          info: info
+          id:                 id,
+          destination_id:     destination_id,
+          name:               name,
+          latitude:           latitude.to_s,
+          longitude:          longitude.to_s,
+          address:            address,
+          suburb:             suburb,
+          country:            country, 
+          postcode:           postcode, 
+          info:               info,
+          booking_conditions: []
         }
       )  
     end
