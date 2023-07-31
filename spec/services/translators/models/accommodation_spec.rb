@@ -57,8 +57,6 @@ RSpec.describe Translators::Models::Accommodation do
         end
       end
     end
-    
   end
   
-
 end
