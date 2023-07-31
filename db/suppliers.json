@@ -1,0 +1,64 @@
+[
+    {
+        "name": "acme",
+        "url":  "https://5f2be0b4ffc88500167b85a0.mockapi.io/suppliers/acme",
+        "attribute_map": {
+            "accommodation": {
+                "Id":            "id",
+                "DestinationId": "destination_id",
+                "Name":          "name",
+                "Latitude":      "latitude",
+                "Longitude":     "longitude",
+                "Address":       "address",
+                "City":          "suburb",
+                "Country":       "country",
+                "PostalCode":    "postcode",
+                "Description":   "info",
+                "Facilities":    "facilities"
+            }
+        }
+    },
+    {
+        "name": "patagonia",
+        "url":  "https://5f2be0b4ffc88500167b85a0.mockapi.io/suppliers/patagonia",
+        "attribute_map": {
+            "accommodation": {
+                "id":           "id",
+                "destination":  "destination_id",
+                "name":         "name",
+                "lat":          "latitude",
+                "lng":          "longitude",
+                "address":      "address",
+                "info":         "info",
+                "amenities":    "facilities",
+                "images":       "images"
+            },
+            "images": {
+                "url":          "url",
+                "description":  "description"
+            }
+        }
+    },
+    {
+        "name": "paperflies",
+        "url":  "https://5f2be0b4ffc88500167b85a0.mockapi.io/suppliers/paperflies",
+        "attribute_map": {
+            "accommodation": {
+                "hotel_id":         "id",
+                "destination_id":   "destination_id",
+                "hotel_name":       "name",
+                "location": {
+                    "address":      "address",
+                    "country":      "country"
+                },
+                "details":          "info",
+                "amenities":        "facilities",
+                "images":           "images"
+            },
+            "images": {
+                "link":             "url",
+                "caption":          "description"
+            }
+        }
+    }
+]
