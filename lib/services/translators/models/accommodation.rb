@@ -31,8 +31,7 @@ module Translators
           suburb:             suburb&.strip,
           country:            country&.strip,
           postcode:           postcode&.strip,
-          info:               info&.strip,
-          booking_conditions: booking_conditions
+          info:               info&.strip
         }.compact
       end
 

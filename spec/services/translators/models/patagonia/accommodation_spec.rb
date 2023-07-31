@@ -55,8 +55,7 @@ RSpec.describe Translators::Models::Patagonia::Accommodation do
           latitude:           latitude.to_s,
           longitude:          longitude.to_s,
           address:            address,
-          info:               info,
-          booking_conditions: []
+          info:               info
         }
       )  
     end

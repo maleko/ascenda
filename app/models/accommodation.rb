@@ -4,5 +4,6 @@ class Accommodation < ApplicationRecord
 
     has_many :facilities
     has_many :images
+    has_many :booking_conditions
 
 end

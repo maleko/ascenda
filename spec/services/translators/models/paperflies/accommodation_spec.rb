@@ -68,8 +68,7 @@ RSpec.describe Translators::Models::Paperflies::Accommodation do
           name: name,
           address: address,
           country: country,
-          info: info, 
-          booking_conditions: booking_details
+          info: info
         }
       )  
     end

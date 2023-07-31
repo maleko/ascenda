@@ -48,8 +48,7 @@ RSpec.describe Translators::Models::Acme::Accommodation do
           suburb:             suburb,
           country:            country, 
           postcode:           postcode, 
-          info:               info,
-          booking_conditions: []
+          info:               info
         }
       )  
     end
