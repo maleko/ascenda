@@ -11,8 +11,8 @@ module Translators
 
       def attributes
         {
-          category: category&.strip,
-          name:     name&.strip
+          category: category&.strip&.capitalize,
+          name:     name&.strip&.capitalize
         }.compact
       end
     end

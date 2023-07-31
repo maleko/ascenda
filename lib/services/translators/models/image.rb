@@ -10,8 +10,8 @@ module Translators
 
       def attributes
         {
-          image_type:  image_type&.strip,
-          description: description&.strip,
+          image_type:  image_type&.strip&.capitalize,
+          description: description&.strip&.capitalize,
           url:         url&.strip
         }.compact
       end

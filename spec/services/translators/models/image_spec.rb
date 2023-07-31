@@ -19,14 +19,19 @@ RSpec.describe Translators::Models::Image do
     subject { described_class.from_json( json ) }
 
     context "attribute has trailing spaces" do
-      %w{image_type description url}.each do |attribute|
+      %w{image_type description}.each do |attribute|
         let(:example) { "test test   "}
         let(attribute.to_sym) { example }
 
         it "should trim trailing spaces for #{attribute}" do
-          expect(subject.attributes[attribute.to_sym]).to eql example.strip 
+          expect(subject.attributes[attribute.to_sym]).to eql example.strip.capitalize 
         end
       end
+
+      it "should handle urls" do
+        expect(subject.attributes[:url]).to eq url
+      end
+      
     end
 
     context "nil values" do

@@ -22,7 +22,7 @@ RSpec.describe Translators::Models::Facility do
         let(attribute.to_sym) { example }
 
         it "should trim trailing spaces for #{attribute}" do
-          expect(subject.attributes[attribute.to_sym]).to eql example.strip 
+          expect(subject.attributes[attribute.to_sym]).to eql example.strip.capitalize 
         end
       end
     end
