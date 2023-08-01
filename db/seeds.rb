@@ -6,9 +6,19 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
-seeded_suppliers = JSON.parse( File.read( "db/suppliers.json" ) )
+require 'services/importers/core_importer'
+require 'services/translators/acme_translator'
+require 'services/translators/patagonia_translator'
+require 'services/translators/paperflies_translator'
 
-seeded_suppliers.each do |seeded_supplier|
-    supplier = Supplier.create(seeded_supplier)
-    supplier.save
-end 
+at = AcmeTranslator.new
+ai = CoreImporter.new(retrieved_accommodations: at.accommodations)
+ai.import
+
+pt = PatagoniaTranslator.new
+pi = CoreImporter.new(retrieved_accommodations: pt.accommodations)
+pi.import
+
+ppt = PaperfliesTranslator.new
+ppi = CoreImporter.new(retrieved_accommodations: ppt.accommodations)
+ppi.import
