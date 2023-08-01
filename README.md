@@ -92,6 +92,7 @@ I have used a fairly simplistic way of merging the data. The app pulls the data 
 2. A separate Rake functionality to start the pull requests and merging
 3. Probably separate the pulling and merging into two separate services but it will require persistence of the external data temporarily 
 4. Fix up the address merging as it would be good to separate the suburb/province, country and etc with in the address field
+5. Perhaps utilise Google Maps to get a clean address
 
 ### Thought Experiment on Production
 
