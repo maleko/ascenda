@@ -6,6 +6,8 @@ Submission for the [Ascenda Coding Challenge](https://gist.github.com/melvrickgo
 
 * Ruby version - 3.0.0
 * Rails version - 7.0.6
+  
+> I am using RVM. The necessary `.ruby-gemset` and `.ruby-version` files are checked in
 
 ## Getting Started
 
